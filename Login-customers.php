@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+#error_reporting(0);
 session_start();
 require('config.php');
 $db = mysqli_connect($db_host,$db_user,$db_pass, $db_database) or die ("unsuccessfull");
@@ -16,7 +16,7 @@ $db = mysqli_connect($db_host,$db_user,$db_pass, $db_database) or die ("unsucces
       
       $count = mysqli_num_rows($result);
       
-      // If result matched $myusername and $mypassword, table row must be 1 row
+     
         
       if($count == 1) {
          // session_register("myusername");
